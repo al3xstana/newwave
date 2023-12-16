@@ -283,6 +283,10 @@ header .btn{
     cursor:pointer;
 
 }
+.card-btn a{
+    text-decoration: none;
+    color:#1f3d47;
+}
 .section-four{
     width: 100%;
     min-height: 90vh;
@@ -730,4 +734,37 @@ ul{
 }
 form .contact-form .error-txt {
     margin-top:-10px;
+}
+
+
+/* gallery styling */
+
+.photogallery{
+    min-height: 80vh;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.photogallery .container{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	
+
+}
+.photogallery .gallery{
+	padding-top:100px;
+	display:grid;
+	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+	grid-gap: 30px;
+
+}
+.photogallery .gallery img {
+	width:100%;
+	object-fit: cover;
+	aspect-ratio: 1;
+
+
 }

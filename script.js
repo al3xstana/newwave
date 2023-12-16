@@ -14,5 +14,6 @@ function sendEmail(){
 }
 form.addEventListener('sumbit',(e)=>{
     e.preventDefault();
+    
     sendEmail();
 })
