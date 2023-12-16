@@ -57,6 +57,11 @@ body{
     background: fff;
     padding:20px 100px;
 }
+@media(max-width:574px){
+    .section-two{
+        padding:20px 20px;
+    }
+}
 .section-two h2{
     color: black;
     font-size:50px;
@@ -139,7 +144,7 @@ header .btn{
         position:fixed;
         background:#000;
         flex-direction: column;
-        min-width: 400px;
+        min-width: 300px;
         height: 100vh;
         top:0;
         right:-100%;
@@ -423,8 +428,8 @@ ul{
 .section-cruises{
     min-height: 80vh;
     background: fff;
-    padding:20px 100px;
     margin-bottom:50px;
+    margin-top:50px;
 }
 .section-cruises .card{
     width:600px;
@@ -480,7 +485,7 @@ ul{
 @media(max-width:574px){
     .sunset-marathonisi{
         
-        padding: 20px 50px;
+        padding: 0;
         margin-bottom:50px;
         width:100%;
         
@@ -493,7 +498,7 @@ ul{
     
     }
     .boat-info{
-        padding-top:40px;
+        padding:40px 20px;
         width: 100%;
         
 }
@@ -709,6 +714,10 @@ ul{
 }
 
 @media(max-width:800px){
+    .contact-form{
+        width: 100%;
+        margin:0px;
+    }
     .contact-box{
        
         flex-direction: column;
