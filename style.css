@@ -16,11 +16,18 @@ body{
     width: 100%;
     line-height:1.5;
 }
+#preloader{
+    background: #fff url(images/preloader.gif) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+
+}
 .section-main{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background:url(images/background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display:flex;
@@ -28,6 +35,15 @@ body{
     align-items:center;
     padding: 20px 100px;
 }
+.bg-vid {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: -1;
+   top:0;
+   left:0;
+   object-fit: cover;
+  }
 .section-main2{
     position: relative;
     width: 100%;

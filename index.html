@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div id="preloader"></div>
     <header>
     <a href="#" class="brand">New Wave</a>
     <div class="menu">
@@ -28,8 +29,10 @@
     </div>
 </header>
 <section class="section-main" >
-
-<h1>New Wave Boat Rentals</h1>
+    <video autoplay muted loop class="bg-vid">
+        <source src="videos/background.mp4" type="video/mp4">
+      </video>
+      <h1>New Wave </h1>
 </section>
 <section class="section-two">
     <div class="container">
@@ -97,7 +100,8 @@
                 </div>
                 <div class="item">
                     <div>
-                        <p>lorem20</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis vero deleniti blanditiis vel beatae nesciunt explicabo quasi illum harum.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -191,6 +195,19 @@
         }
     })
 </script>
+
+
+
+<script>
+    var loader= document.getElementById('preloader');
+    document.body.style.overflow = 'hidden' ;
+    window.addEventListener('load',function(){
+        loader.style.display = 'none';
+        document.body.style.overflow = '';
+    })
+</script>
+
+
 
 </body>
 </html>
