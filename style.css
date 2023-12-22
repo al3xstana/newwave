@@ -57,7 +57,7 @@ body{
   }
   @media(max-width:350px){
     .bg-vid{
-        min-height:300px;
+        min-height:200px;
     }
     
   }
