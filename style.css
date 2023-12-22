@@ -16,6 +16,7 @@ body{
     width: 100%;
     line-height:1.5;
 }
+
 #preloader{
     background: #fff url(images/preloader.gif) no-repeat center;
     height: 100vh;
@@ -365,6 +366,11 @@ header .btn{
     border-radius: 10px;
 
 
+}
+@media(max-width:450px){
+    .box-container .box{
+        width:300px;
+    }
 }
 
 .footer{
