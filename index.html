@@ -29,17 +29,21 @@
     </div>
 </header>
 <section class="section-main" >
+
     <video autoplay muted loop playsinline class="bg-vid">
         <source src="videos/background.mp4" type="video/mp4">
       </video>
       <h1>New Wave </h1>
+
 </section>
 <section class="section-two">
     <div class="container">
         <div class="divededsection">
             <div>
-            <h2> Travel With New Wave Boat Rentals </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nihil ratione fugiat itaque quo, saepe dolore illo ipsa vero ducimus!</p>
+            <h2> Travel With Us </h2>
+            <p>Embark on a maritime adventure like never before with New Wave Boat Rentals, your gateway to 
+                the stunning waters of Zakynthos, Greece. Nestled in the heart of the Ionian Sea, Zakynthos is a 
+                paradise for sea lovers, and New Wave is here to make your nautical dreams a reality.</p>
             </div> 
 
             <div class>
@@ -51,6 +55,7 @@
 
 </section>
 <section class="section-three">
+   
     <div class="card-container">
         <div class="card">
             <img src="images/sunset.jpg" alt="">
@@ -71,7 +76,16 @@
             </div>
         </div>
         <div class="card">
-            <img src="images/background.jpg" alt="">
+            <img src="images/shipwreck.jpg" alt="">
+            <div class="card-body">
+                <h1 class="card-title">Shipwreck</h1>
+                <p class="card-sub-title">From 5 to 8 hours</p>
+                <p class="card-sub-info">Visit the famous Shipwreck Beach</p>
+                <button class="card-btn"><a href="shipwreck.html">More Info</a></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/boat1.jpg" alt="">
             <div class="card-body">
                 <h1 class="card-title">Boat Rentals</h1>
                 <p class="card-sub-title">From 3 to 8 hours</p>
@@ -130,19 +144,11 @@
                    
                 </ul>
             </div>
+          
             <div class="footer-col">
-                <h4>3 column</h4>
-                <ul>
-                    <li><a href='#'>link 1</a></li>
-                    <li><a href='#'>link 2</a></li>
-                    <li><a href='#'>link 3</a></li>
-                    <li><a href='#'>link 4</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Follow Us</h4>
+                <h4>Find Us On</h4>
                 <div class="social-links">
-                    <a href='#'><i class='fab fa-facebook-f'></i></i></a>
+                    <a href='#'><i class='fab fa-whatsapp'></i></i></a>
                     <a href='#'><i class='fab fa-instagram'></i></i></a>
                     
             </div>
@@ -193,19 +199,20 @@
                 items:1
             }
         }
-    })
+    });
+
+/* preloader */
+
+var loader= document.getElementById('preloader');
+document.body.style.overflow = 'hidden' ;
+window.addEventListener('load',function(){
+    loader.style.display = 'none';
+    document.body.style.overflow = '';
+});
+
 </script>
 
 
-
-<script>
-    var loader= document.getElementById('preloader');
-    document.body.style.overflow = 'hidden' ;
-    window.addEventListener('load',function(){
-        loader.style.display = 'none';
-        document.body.style.overflow = '';
-    })
-</script>
 
 
 

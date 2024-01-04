@@ -118,13 +118,13 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px 100px;
+    padding:20px 40px;
     transition: 0.6s;
 
 }
 header.sticky{
     background: #000000;
-    padding:15px 100px;
+    padding:15px 40px;
 
 }
 header .brand{
@@ -264,10 +264,10 @@ header .btn{
     position: relative;
 }
 @media(max-width: 330px){
-.card{
-    width:250px;
-}
-}
+    .card{
+        width:250px;
+    }
+    }
 .card img{
     width:100%;
     height:100%;
@@ -372,7 +372,7 @@ header .btn{
 
 
 }
-@media(max-width:400px){
+@media(max-width:450px){
     .box-container .box{
         width:250px;
     }
@@ -486,7 +486,13 @@ ul{
 @media (max-width:750px){
     .section-cruises .card{
         width:320px;
-        height:500px;
+    
+    }
+}
+@media (max-width:350px){
+    .section-cruises .card{
+        width: 250px;
+
     }
 }
 /*Sunset and Marathonisi Styling */
@@ -504,7 +510,6 @@ ul{
     display:flex;
     padding-bottom:50px;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
    
    
@@ -523,9 +528,9 @@ ul{
 }
 .boat-info{
     width: 50%;
-    padding:0px 100px;
+    padding:0px 40px;
 }
-@media(max-width:574px){
+@media(max-width:650px){
     .sunset-marathonisi{
         
         padding: 0;
@@ -536,6 +541,8 @@ ul{
     .boat-container{
         flex-direction: column;
         padding-bottom:30px;
+        padding-right: 10px;
+        padding-left: 10px;
        
        
     
@@ -582,7 +589,7 @@ ul{
   .accordion {
     color: var(--theme);
     border: 2px solid;
-    border-radius: 0.5rem;
+    border-radius: 0rem;
     overflow: hidden;
   }
   .tab__label,
@@ -754,6 +761,10 @@ ul{
 }
 .contact-form tr td{
     padding-top: 20px;
+}
+.contact-form a{
+    text-decoration: none;
+    color:#fff
 }
 
 @media(max-width:800px){

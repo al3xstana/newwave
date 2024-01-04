@@ -17,3 +17,10 @@ form.addEventListener('sumbit',(e)=>{
     
     sendEmail();
 })
+/* preloader */
+var loader= document.getElementById('preloader');
+document.body.style.overflow = 'hidden' ;
+window.addEventListener('load',function(){
+    loader.style.display = 'none';
+    document.body.style.overflow = '';
+})

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div id="preloader"></div>
     <header>
     <a href="#" class="brand">New Wave</a>
     <div class="menu">
@@ -83,16 +84,16 @@ background-position: center;">
                 <h3>Find Us Also</h3>
                 <table>
                     <tr>
-                        <td>Email</td>
-                        <td>contactus@gmail.com</td>
+                        <td><i class='fa fa-envelope'></i></i></td>
+                        <td><a href='mailto:contactus@gmail.com'>contactus@gmail.com</a></td>
                     </tr>
                     <tr>
-                        <td>Phone</td>
-                        <td>+30 695 323 3042</td>
+                        <td><i class='fa fa-phone'></i></i></td>
+                        <td><a href="tel:+306953233042">+30 695 323 3042</a></td>
                     </tr>
                     <tr>
-                        <td>Address</td>
-                        <td>Agios Sostis Port, Zakynthos</td>
+                        <td><i class='fa fa-map-marker'></i></i></td>
+                        <td><a href='https://www.google.com/maps'>Agios Sostis Port, Zakynthos</a></td>
                     </tr>
                 </table>
             </div>
@@ -100,50 +101,41 @@ background-position: center;">
         </div>
     </div>
     </section>
-    <section class="footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="boatrentals.html">Boat Rentals</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Cruises</h4>
-                    <ul>
-                        
-                        <li><a href="cruises.html">Cruises</a></li>
-                        <li><a href="sunset.html">Sunset</a></li>
-                        <li><a href="marathonisi.html">Turtle Island</a></li>
-                       
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>3 column</h4>
-                    <ul>
-                        <li><a href='#'>link 1</a></li>
-                        <li><a href='#'>link 2</a></li>
-                        <li><a href='#'>link 3</a></li>
-                        <li><a href='#'>link 4</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href='#'><i class='fab fa-facebook-f'></i></i></a>
-                        <a href='#'><i class='fab fa-instagram'></i></i></a>
-                        
-                </div>
+<section class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="boatrentals.html">Boat Rentals</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-    
+            <div class="footer-col">
+                <h4>Cruises</h4>
+                <ul>
+                    
+                    <li><a href="cruises.html">Cruises</a></li>
+                    <li><a href="sunset.html">Sunset</a></li>
+                    <li><a href="marathonisi.html">Turtle Island</a></li>
+                   
+                </ul>
+            </div>
+          
+            <div class="footer-col">
+                <h4>Find Us On</h4>
+                <div class="social-links">
+                    <a href='#'><i class='fab fa-whatsapp'></i></i></a>
+                    <a href='#'><i class='fab fa-instagram'></i></i></a>
+                    
+            </div>
         </div>
-    
-    </section>
-    
+
+    </div>
+
+</section>
     
     
     
@@ -165,6 +157,15 @@ background-position: center;">
         closeBtn.addEventListener('click',()=>{
             menu.classList.remove('active');
         });
+        /* preloader */
+
+var loader= document.getElementById('preloader');
+document.body.style.overflow = 'hidden' ;
+window.addEventListener('load',function(){
+    loader.style.display = 'none';
+    document.body.style.overflow = '';
+});
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
