@@ -18,6 +18,7 @@ body{
 }
 
 #preloader{
+    display: none;
     background: #fff url(images/preloader.gif) no-repeat center;
     height: 100vh;
     width: 100%;
@@ -108,6 +109,10 @@ body{
     margin:30px 0;
 }
 
+.logo {
+    position: fixed;
+    left:0px;
+}
 
 header{
     z-index: 999;
@@ -128,6 +133,8 @@ header.sticky{
 
 }
 header .brand{
+    height: 45px;
+    width: auto;
     color: #fff;
     font-size:30px;
     font-weight: 700;
@@ -136,6 +143,12 @@ header .brand{
     letter-spacing: 2px;
 
 }
+header .brand img {
+   width:100px;
+   height: auto;
+   
+  }
+
 header .menu{
     position: relative;
     display:flex;
@@ -153,11 +166,11 @@ header .menu a{
     padding: 0 10px;
     border-radius: 20px;
     transition: 0.3s;
-    transition-property: color , background ;
+    
 
 }
 header .menu a:hover{
-    color: #000;
+    color:#3ea3bf;
     background: #fff;
 
 }
@@ -227,8 +240,13 @@ header .btn{
 	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 	grid-gap: 30px;
 }
+.divededsection .img{
+    width:100%;
+    padding-top: 60px;
+    
+}
 .divededsection img{
-        padding-top: 60px;;
+        
         width:100%;
 }
 
@@ -424,13 +442,13 @@ ul{
     text-transform: capitalize;
     text-decoration: none;
     font-weight: 400;
-    color:lightblue;
+    color:#fff;
     display:block;
     transition: all 0.3s ease ;
 
 }
 .footer-col ul li a:hover{
-    color:#fff;
+    color:lightblue;
     padding-left:8px;
 }
 .footer-col .social-links a{
@@ -508,6 +526,28 @@ ul{
 .boat-info{
     width: 50%;
     padding:0px 40px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+}
+.boat-info h2{
+    font-size: 32px;
+    font-weight: 700;
+    
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+.boat-info h2 span{
+    color: #2095AE;
+}
+.boat-info ul li{
+    color: #5b5c5f;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 10px;
 }
 @media(max-width:800px){
     .sunset-marathonisi{
@@ -779,37 +819,6 @@ form .contact-form .error-txt {
 }
 
 
-/* gallery styling */
-
-.photogallery{
-    min-height: 80vh;
-    text-align: center;
-    padding-top: 100px;
-}
-
-.photogallery .container{
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-	
-
-}
-.photogallery .gallery{
-	padding-top:100px;
-	display:grid;
-	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-	grid-gap: 30px;
-
-}
-.photogallery .gallery img {
-	width:100%;
-	object-fit: cover;
-	aspect-ratio: 1;
-
-
-}
 .resize-container{
     width: 100%;
     padding-right: 15px;
@@ -860,7 +869,7 @@ form .contact-form .error-txt {
    z-index: 777; 
    content: '';
    position: absolute;
-   /*background: rgba(3, 96, 251, 0.2);   */
+   
    width: 100%;
    height: 100%;
    top:0;
