@@ -18,12 +18,13 @@ body{
 }
 
 #preloader{
-    display: none;
+   
     background: #fff url(images/preloader.gif) no-repeat center;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 1000;
+    display: none;
 
 }
 .section-main{
@@ -39,7 +40,7 @@ body{
 }
 
 .bg-vid {
-   width: 100%;
+   width: 100vw;
    height: 100%;
    position: absolute;
    z-index: -1;
