@@ -431,7 +431,7 @@ ul{
     position: absolute;
     left:0;
     bottom:-10px;
-    background-color: lightblue;
+    background-color: #fff;
     height:2px;
     box-sizing:border-box;
     width:50px;
@@ -450,7 +450,7 @@ ul{
 
 }
 .footer-col ul li a:hover{
-    color:lightblue;
+    color:#fff;
     padding-left:8px;
 }
 .footer-col .social-links a{
