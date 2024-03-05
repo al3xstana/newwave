@@ -418,7 +418,7 @@ header .btn{
 ul{
     list-style:none;
 }
-.footer-col h4{
+.footer-col .h4{
     font-size: 18px;
     color:#ffffff;
     text-transform: capitalize;
@@ -426,7 +426,7 @@ ul{
     font-weight: 500 ;
     position: relative;
 }
-.footer-col h4::before{
+.footer-col .h4::before{
     content:'';
     position: absolute;
     left:0;
