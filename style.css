@@ -24,7 +24,7 @@ body{
     width: 100%;
     position: fixed;
     z-index: 1000;
-    display: none;
+    
 
 }
 .section-main{
@@ -90,12 +90,13 @@ body{
 }
 .section-two{
     min-height: 70vh;
-    background: fff;
+    background: var(--background);
     
 }
 @media(max-width:574px){
     .section-two{
         padding:20px 20px;
+       
     }
 }
 .section-two h2{
@@ -236,6 +237,10 @@ header .btn{
 	justify-content: center;
     
 }
+.padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .divededsection{
     padding-top:50px;
 	display:grid;
@@ -245,6 +250,7 @@ header .btn{
 .divededsection .img{
     width:100%;
     padding-top: 60px;
+    padding-bottom:60px;
     
 }
 .divededsection img{
@@ -255,12 +261,31 @@ header .btn{
 .section-three{
     width: 100%;
     min-height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:100px;
+    
+    
     margin-bottom: 100px;
 }
+.section-three .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.section-three .container h2{
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+.section-three .container p {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 .card-container{
     display: flex;
     justify-content: center;
@@ -374,7 +399,9 @@ header .btn{
 
 }
 .box-container .h3{
-    
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
 }
 
 .box-container .box{
