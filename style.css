@@ -27,6 +27,7 @@ body{
     
 
 }
+
 .section-main{
     position: relative;
     width: 100%;
@@ -146,7 +147,7 @@ header .brand{
     letter-spacing: 2px;
 
 }
-header .brand img {
+header .brand img{
    width:100px;
    height: auto;
    
