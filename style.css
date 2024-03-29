@@ -229,6 +229,14 @@ header .btn{
         line-height: 60px;
     }
 }
+.section-main .midlogo img{
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    width: 600px;
+    height: 600px;
+
+}
 
 .container{
 	width: 100%;
