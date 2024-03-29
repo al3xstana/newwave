@@ -1148,7 +1148,7 @@ form .contact-form .error-txt {
         justify-content: start;    
     }
     .slider .list .item .content h1{
-        font-size: 60px;
+        font-size: 50px;
     }
     .arrows{
         top:90%;
@@ -1161,7 +1161,7 @@ form .contact-form .error-txt {
         font-size: 45px;
     }
     .home .content h1{
-        font-size:45px;
+        font-size:35px;
     
     }
     .thumbnail{
@@ -1172,10 +1172,10 @@ form .contact-form .error-txt {
 }
 @media screen and (max-width:370px){
     .slider .list .item .content h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     .home .content h1{
-        font-size:35px;
+        font-size:30px;
     
     }
 }
