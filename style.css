@@ -286,6 +286,86 @@ header .btn{
     
     margin-bottom: 100px;
 }
+.allcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+   
+}
+.boxcontainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap:100px 50px;
+    padding:100px 50px
+}
+.boxcontainer .card{
+    background:linear-gradient(45deg,var(--primary),lightblue) ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: visible;
+    border:0;
+    width:350px;
+    height: 300px;
+    background-color: #fff ;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+.boxcontainer .card:hover{
+    height: 400px;
+}
+.boxcontainer .card .imgBx{
+    top:20px;
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+.boxcontainer .card:hover .imgBx{
+    top:-100px;
+    scale:0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+.boxcontainer .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.boxcontainer .card .content{
+    position: absolute;
+    top:252px;
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
+    
+    padding: 0 30px;
+    transition: 0.5s;
+    color: white;
+}
+.boxcontainer .card:hover .content{
+    height: 250px;
+    top:150px;
+}
+
+.boxcontainer .card .content .card-sub-info{
+    padding-bottom: 20px;
+
+
+}
 .section-three .container{
     display: flex;
     justify-content: center;
@@ -294,6 +374,7 @@ header .btn{
     text-align: center;
     
 }
+
 .section-three .container h2{
     color: black;
     font-size: 30px;
@@ -429,7 +510,7 @@ header .btn{
   
     position: absolute;
     width:400px;
-    height:300px;
+    height:350px;
     padding:30px;
     background:lightblue;
     float:left;
@@ -443,6 +524,7 @@ header .btn{
 @media(max-width:450px){
     .box-container .box{
         width:250px;
+        height: 500px;
     }
 }
 
@@ -601,6 +683,9 @@ ul{
     font-weight: 500;
     padding-bottom: 10px;
 }
+.boat-info ul li bold{
+    color:#2095AE;
+}
 @media(max-width:800px){
     .sunset-marathonisi{
         
@@ -639,13 +724,18 @@ ul{
     display: grid;
     place-content: center;
     grid-template-columns: repeat(auto-fit, min(100%, 60rem));
-    min-height: 100vh;
+    min-height: 120vh;
     place-items: start;
     gap: 1rem;
     margin: 0;
     padding: 1rem;
     color: var(--primary);
     background: var(--background);
+  }
+  .h2{ 
+    margin-top: 20px;
+    margin-top: 20px;
+    font-size: 45px;
   }
   
   /* Core styles/functionality */
@@ -666,9 +756,19 @@ ul{
   /* Visual styles */
   .accordion {
     color: var(--theme);
+    
+    overflow: hidden;
+  }
+  .tab{
+    color: var(--theme);
     border: 2px solid;
     border-radius: 0rem;
     overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .tab:nth-last-child(2){
+    margin-bottom: 0;
+    
   }
   .tab__label,
   .tab__close {
@@ -958,9 +1058,15 @@ form .contact-form .error-txt {
     font-size: 1.2em;
     font-weight: 600;
 }
+
 .home .content p {
     margin-bottom: 65px;
     font-size: 1.1em;
+}
+.home .content p:nth-child(1) {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin:0;
 }
 .home .content a{
     background: #fff;
